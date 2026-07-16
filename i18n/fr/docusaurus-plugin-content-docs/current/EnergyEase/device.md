@@ -124,8 +124,76 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+### 4.3 Remplacement D’accessoire
 
-### 4.3 Lier appareil parent / sous-appareils
+
+:::tip
+Avant de commencer, assurez-vous que :
+
+- Le Bluetooth est activé sur votre téléphone.
+- L’appareil est sous tension.
+- Votre téléphone reste à proximité de l’appareil pendant toute l’opération.
+:::
+
+#### Étape 1 : Mettre à jour les informations de l’appareil
+
+1. Sur la page des paramètres de l’appareil, appuyez sur **Remplacement D’accessoire**.
+
+2. Scannez le code QR présent sur le nouveau module.
+
+3. Appuyez sur **Suivant**, vérifiez les informations affichées dans **Confirmation du Remplacement**, puis appuyez sur **OK** pour continuer.
+
+4. Attendez la fin du processus de remplacement.
+
+   > Pendant cette étape, le système met automatiquement à jour les informations du nouveau module et migre les paramètres de l’appareil, notamment les paramètres de cluster, les paramètres de source de charge ainsi que les appareils associés.
+
+5. Une fois la mise à jour terminée, appuyez sur **Suivant** pour continuer.
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/scan_qr_code.png").default} width="240"/>
+<img src={require("./img/accessory_info.png").default} width="240"/>
+<img src={require("./img/confirm_replacement.png").default} width="240"/>
+<img src={require("./img/connect_accessory.png").default} width="240"/>
+<img src={require("./img/connect_accessory_success.png").default} width="240"/>
+
+#### Étape 2 : Migrer les données historiques
+
+Appuyez sur **Démarrer la Migration** pour lancer la migration des données historiques.
+
+Si vous ne souhaitez pas effectuer la migration immédiatement, appuyez sur **Passer**. Vous pourrez également lancer la migration ultérieurement depuis [l’historique des remplacements](#étape-4--consulter-lhistorique-des-remplacements).
+
+<img src={require("./img/data_sync.png").default} width="240"/>
+<img src={require("./img/skip_data_sync.png").default} width="240"/>
+
+#### Étape 3 : Reconnecter l’appareil au réseau
+
+1. Saisissez le nom du réseau Wi-Fi (SSID) et son mot de passe, puis appuyez sur **Configurer**.
+2. Attendez que la connexion réseau soit établie avec succès.
+
+<img src={require("./img/wifi_settings.png").default} width="240"/>
+<img src={require("./img/wifi_connected2.png").default} width="240"/>
+
+
+#### Étape 4 : Consulter l’historique des remplacements
+
+Pour consulter l’historique des remplacements, accédez à **Paramètres > Remplacement D’accessoire**
+
+Dans **Historique des Remplacements**, vous pouvez :
+
+- Consulter l’historique des remplacements, y compris la date du remplacement, l’état de la migration des paramètres et l’état de la migration des données historiques.
+- Appuyer sur **Démarrer la Migration** dans l’enregistrement correspondant pour accéder à la page de migration de l’appareil. Si la migration des données historiques n’a pas encore été lancée, vous pouvez la démarrer depuis cette page.
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/replacement_history.png").default} width="240"/>
+<img src={require("./img/device_migration.png").default} width="240"/>
+
+:::info
+Une fois lancée, la migration des données historiques s’effectue automatiquement via le cloud. Il n’est pas nécessaire de rester sur la page de migration pendant le processus.
+
+Vous pouvez consulter à tout moment l’avancement et l’état de la migration dans **Historique des Remplacements**.
+:::
+
+### 4.4 Lier appareil parent / sous-appareils
 
 Pour simplifier la consultation et la gestion des données, le système permet d’établir des relations parent-enfant entre les appareils :
 
@@ -142,14 +210,14 @@ Pour simplifier la consultation et la gestion des données, le système permet d
 Si aucun appareil n’est disponible pour le lien, veuillez cliquer sur **Ajouter un appareil** pour inclure l’appareil dans votre domicile en premier.  
 <img src={require("./img/link_new_device.png").default} width="240"/>  
 
-### 4.4 Paramètres réseau
+### 4.5 Paramètres réseau
 
 Appuyez sur **Paramètres du réseau** pour consulter le nom du Wi-Fi auquel l’appareil est connecté et son adresse IP attribuée.
 
 <img src={require("./img/settings.png").default} width="240"/>
 <img src={require("./img/network_settings.png").default} width="240"/>
 
-### 4.5 Mise à jour du firmware
+### 4.6 Mise à jour du firmware
 
 Appuyez sur **Mise à jour du firmware** pour consulter la version actuelle du firmware de l’appareil et les mises à jour disponibles. Si une nouvelle version est disponible, appuyez sur **Appliquer** pour effectuer la mise à jour en ligne.
 

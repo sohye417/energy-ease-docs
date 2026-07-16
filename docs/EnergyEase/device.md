@@ -129,8 +129,70 @@ When the power setting exceeds 800W, the app will display a safety notice. After
   </TabItem>
 </Tabs>
 
+### 4.3 Accessory Replacement
 
-### 4.3 Link Parent Device / Sub-Devices
+:::tip
+Before starting:
+- Ensure Bluetooth is enabled on your phone.
+- Ensure your device is turned on.
+- Keep your phone close to the device throughout the process.
+:::
+
+#### Step 1: Update device information
+
+1. In the device settings, tap **Accessory Replacement**. 
+2. Scan the QR code on the new accessory.
+3. Tap **Next**, review the **Replacement Confirmation** information, and then tap **OK** to continue.
+4. Wait for the replacement process to complete.   
+   > During this process, the system automatically updates the accessory information and migrates the device settings, including cluster settings, load source settings, linked devices.
+5. After the accessory information has been updated successfully, tap **Next** to continue.
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/scan_qr_code2.png").default} width="240"/>
+<img src={require("./img/accessory_info.png").default} width="240"/>
+<img src={require("./img/confirm_replacement.png").default} width="240"/>
+<img src={require("./img/connect_accessory.png").default} width="240"/>
+<img src={require("./img/connect_accessory_success.png").default} width="240"/>
+
+#### Step 2: Migrate historical data
+
+Tap **Start Migration** to migrate historical data.
+
+If you do not want to migrate historical data immediately, tap **Skip**. You can start the migration later from [Replacement History](#step-4-view-replacement-history).
+
+<img src={require("./img/data_sync.png").default} width="240"/>
+<img src={require("./img/skip_data_sync.png").default} width="240"/>
+
+#### Step 3: Reconnect the device to the network
+
+1. Enter the Wi-Fi network name (SSID) and password, then tap **Set Up**.
+2. Wait until the network connection is established successfully.
+
+<img src={require("./img/wifi_settings.png").default} width="240"/>
+<img src={require("./img/wifi_connected2.png").default} width="240"/>
+
+
+#### Step 4: View Replacement History
+
+To view previous replacement records, go to: **Settings > Accessory Replacement**
+
+In **Replacement History**, you can:
+- View replacement records, including the replacement time, settings migration status, and historical data migration status.
+- Tap **Start Migration** for a specific record to open the Device Migration page. Start historical data migration if it has not yet started.
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/replacement_history.png").default} width="240"/>
+<img src={require("./img/device_migration.png").default} width="240"/>
+
+:::info
+
+Data migration is performed automatically in the cloud after it has been started. You do not need to stay on the Device Migration page while the migration is in progress.
+
+You can view the migration status and progress at any time in Replacement History.
+
+:::
+
+### 4.4 Link Parent Device / Sub-Devices
 
 To simplify data viewing and management, the system allows establishing parent-child relationships between devices:
 
@@ -150,7 +212,7 @@ If no devices are available for linking, please click **Add Device** to include 
 <img src={require("./img/link_new_device.png").default} width="240"/>  
 
 
-### 4.4 Network Settings
+### 4.5 Network Settings
 
 Tap **Network Settings** to view the Wi-Fi name the device is connected to and its assigned IP address.
 
@@ -158,7 +220,7 @@ Tap **Network Settings** to view the Wi-Fi name the device is connected to and i
 <img src={require("./img/network_settings.png").default} width="240"/>
 
 
-### 4.5 Firmware Update
+### 4.6 Firmware Update
 
 Tap **Firmware Update** to view the device’s current firmware version and available updates. If a new version is available, tap **Apply** to upgrade online.
 
