@@ -128,8 +128,72 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+### 4.3 Zubehör Austauschen
 
-### 4.3 Übergeordnetes Gerät / Untergeräte verknüpfen
+:::tip
+Bitte stellen Sie vor dem Start sicher:
+- Bluetooth am Smartphone ist aktiviert  
+- Das Gerät ist eingeschaltet  
+- Das Smartphone befindet sich während des gesamten Vorgangs möglichst nah am Gerät  
+:::
+
+#### Schritt 1: Geräteinformationen aktualisieren
+
+1. Öffnen Sie die Geräteeinstellungen und tippen Sie auf **Zubehör Austauschen**.  
+2. Scannen Sie den QR-Code auf dem neuen Zubehör.  
+3. Tippen Sie auf **Weiter**, prüfen Sie die Informationen unter **Bestätigung des Austauschs** und bestätigen Sie mit **OK**.  
+4. Warten Sie, bis der Austausch abgeschlossen ist.  
+
+   > Während dieses Vorgangs werden Zubehörinformationen automatisch aktualisiert und Geräteeinstellungen migriert, einschließlich Cluster-Konfiguration, Lastquelle und verknüpfter Geräte.
+
+5. Nach erfolgreicher Aktualisierung tippen Sie auf **Weiter**, um fortzufahren.
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/scan_qr_code.png").default} width="240"/>
+<img src={require("./img/accessory_info.png").default} width="240"/>
+<img src={require("./img/confirm_replacement.png").default} width="240"/>
+<img src={require("./img/connect_accessory.png").default} width="240"/>
+<img src={require("./img/connect_accessory_success.png").default} width="240"/>
+
+#### Schritt 2: Historische Daten migrieren
+
+Tippen Sie auf **Migration Starten**, um die historischen Daten zu übertragen.
+
+Wenn Sie die Migration derzeit nicht durchführen möchten, können Sie auf **Überspringen** tippen. Die Migration kann später auch unter [Austauschverlauf](#schritt-4-austauschverlauf-anzeigen) gestartet werden.
+
+<img src={require("./img/data_sync.png").default} width="240"/>
+<img src={require("./img/skip_data_sync.png").default} width="240"/>
+
+
+#### Schritt 3: Gerät erneut mit dem Netzwerk verbinden
+
+1. Geben Sie WLAN-Name (SSID) und Passwort ein und tippen Sie auf **Einrichten**.  
+2. Warten Sie, bis die Netzwerkverbindung erfolgreich hergestellt wurde.  
+
+<img src={require("./img/wifi_settings.png").default} width="240"/>
+<img src={require("./img/wifi_connected2.png").default} width="240"/>
+
+
+#### Schritt 4: Austauschverlauf anzeigen
+
+Um frühere Austauschvorgänge anzuzeigen, gehen Sie zu: **Einstellungen > Zubehör Austauschen**.
+
+Im Bereich **Austauschverlauf** können Sie:
+
+- Austauschhistorie anzeigen, einschließlich Zeitpunkt, Migrationsstatus der Einstellungen und Datenmigration  
+- In einem Eintrag auf **Migration Starten** tippen, um den Migrationsprozess zu starten, falls die Datenmigration noch nicht begonnen wurde  
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/replacement_history.png").default} width="240"/>
+<img src={require("./img/device_migration.png").default} width="240"/>
+
+:::info
+Die Migration historischer Daten erfolgt nach dem Start automatisch über die Cloud. Währenddessen ist kein Verbleib auf der Migrationsseite erforderlich.
+
+Sie können den Fortschritt und Status jederzeit im Bereich **Austauschverlauf** einsehen.
+:::
+
+### 4.4 Übergeordnetes Gerät / Untergeräte verknüpfen
 
 Zur Vereinfachung der Datenanzeige und -verwaltung ermöglicht das System die Einrichtung von Eltern-Kind-Beziehungen zwischen Geräten:
 
@@ -142,7 +206,7 @@ Wenn keine Geräte zum Verknüpfen verfügbar sind, klicken Sie bitte auf **Ger�
 <img src={require("./img/link_new_device.jpg").default} width="240"/>  
 
 
-### 4.4 Netzwerk-Einstellungen
+### 4.5 Netzwerk-Einstellungen
 
 Tippen Sie auf **Netzwerk-Einstellungen**, um den Namen des WLANs anzuzeigen, mit dem das Gerät verbunden ist, sowie die zugewiesene IP-Adresse.
 
@@ -150,7 +214,7 @@ Tippen Sie auf **Netzwerk-Einstellungen**, um den Namen des WLANs anzuzeigen, mi
 <img src={require("./img/network_settings.jpg").default} width="240"/>
 
 
-### 4.5 Firmware-Update
+### 4.6 Firmware-Update
 
 Tippen Sie auf **Firmware-Update**, um die aktuelle Firmware-Version des Geräts und verfügbare Updates anzuzeigen. Wenn eine neue Version verfügbar ist, tippen Sie auf **Anwenden**, um das Online-Upgrade durchzuführen.
 

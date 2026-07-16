@@ -129,9 +129,69 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+### 4.3 配件更换
+
+:::tip
+开始前请确保：
+- 手机蓝牙已开启。
+- 设备已开机。
+- 在整个操作过程中，手机尽量靠近设备。
+:::
+
+#### 第一步：更新设备信息
+
+1. 在设备设置页面，点击 **Accessory Replacement**。
+2. 扫描新配件上的二维码。  
+3. 点击 **Next**，查看 **Replacement Confirmation** 信息，然后点击 **OK** 继续。
+4. 等待更换流程完成。
+   > 在此过程中，系统会自动更新配件信息并迁移设备设置，包括集群设置、负载来源设置以及关联设备。
+5. 配件信息更新成功后，点击 **Next** 继续。
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/scan_qr_code.png").default} width="240"/>
+<img src={require("./img/accessory_info.png").default} width="240"/>
+<img src={require("./img/confirm_replacement.png").default} width="240"/>
+<img src={require("./img/connect_accessory.png").default} width="240"/>
+<img src={require("./img/connect_accessory_success.png").default} width="240"/>
+
+#### 第二步：迁移历史数据
+
+点击 **Start Migration** 迁移历史数据。
+
+如果暂时不想迁移历史数据，可点击 **Skip**。您也可以稍后在 [更换记录](#第四步查看更换记录) 中启动迁移。
+
+<img src={require("./img/data_sync.png").default} width="240"/>
+<img src={require("./img/skip_data_sync.png").default} width="240"/>
+
+#### 第三步：重新连接设备网络
+
+1. 输入 Wi-Fi 名称（SSID）和密码，然后点击 **Set Up**。
+2. 等待网络连接成功。
+
+<img src={require("./img/wifi_settings.png").default} width="240"/>
+<img src={require("./img/wifi_connected2.png").default} width="240"/>
 
 
-### 4.3 关联设备
+#### 第四步：查看更换记录
+
+如需查看历史更换记录，进入：**Settings > Accessory Replacement**
+
+在 **Replacement History** 中，您可以：
+
+* 查看更换记录，包括更换时间、设置迁移状态以及历史数据迁移状态。
+* 点击对应记录中的 **Start Migration**，进入设备迁移页面。若历史数据尚未开始迁移，可在此启动迁移。
+
+<img src={require("./img/accessory_replacement.png").default} width="240"/>
+<img src={require("./img/replacement_history.png").default} width="240"/>
+<img src={require("./img/device_migration.png").default} width="240"/>
+
+:::info
+历史数据迁移在启动后会自动通过云端完成，迁移过程中无需停留在设备迁移页面。
+
+您可以随时在 **Replacement History** 中查看迁移进度和状态。
+:::
+
+### 4.4 关联设备
 
 为便于集中查看数据与管理，系统支持为设备建立父子关联关系：
 
@@ -149,7 +209,7 @@ import TabItem from '@theme/TabItem';
 若家庭中暂无可用以关联的设备，请先点击[添加设备](./add-device.md)按钮，将所需设备加入家庭。
 <img src={require("./img/link_new_device.png").default} width="240"/>  
 
-### 4.4 网络设置
+### 4.5 网络设置
 
 点击**网络设置**按钮，可查看设备当前连接的Wi-Fi名称及获取的IP地址。
 
@@ -157,7 +217,7 @@ import TabItem from '@theme/TabItem';
 <img src={require("./img/network_settings.png").default} width="240"/>
 
 
-### 4.5 固件升级
+### 4.6 固件升级
 
 点击**固件升级**按钮，可查看设备当前固件版本及可用更新。如有新版本，点击**立即更新**即可在线升级。
 
