@@ -1,11 +1,11 @@
 ---
 title: Solax
-description: How to connect your Solax solar inverter to Energy Ease/Indevolt
+description: How to connect your Solax solar inverter to Energy Ease
 ---
 
 # Solax
 
-You need tokenID, API Address and Registration number from SolaxCloud to add Solax solar inverter to Energy Ease/Energy Ease App.
+You need tokenID, API Address and Registration number from SolaxCloud to add Solax solar inverter to Energy Ease App.
 
 ## How to get tokenID and API Address?
 
