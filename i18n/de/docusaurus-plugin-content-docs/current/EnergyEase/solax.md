@@ -1,11 +1,11 @@
 ---
 title: Solax
-description: So verbinden Sie Ihren Solax-Solarwechselrichter mit Energy Ease/Indevolt
+description: So verbinden Sie Ihren Solax-Solarwechselrichter mit Energy Ease
 ---
 
 # Solax
 
-Um Ihren Solax-Solarwechselrichter in die Energy Ease/Energy Ease App hinzuzufügen, benötigen Sie **tokenID**, **API Address** und **Registration Number** von SolaxCloud.
+Um Ihren Solax-Solarwechselrichter in die Energy Ease App hinzuzufügen, benötigen Sie **tokenID**, **API Address** und **Registration Number** von SolaxCloud.
 
 ---
 

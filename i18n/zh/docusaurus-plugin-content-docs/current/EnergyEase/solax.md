@@ -1,11 +1,11 @@
 ---
 title: Solax
-description: 如何将 Solax 光伏逆变器连接到 Energy Ease/Indevolt
+description: 如何将 Solax 光伏逆变器连接到 Energy Ease
 ---
 
 # Solax
 
-要将 Solax 光伏逆变器添加到 Energy Ease/Energy Ease App，您需要从 SolaxCloud 获取 **tokenID**、**API Address** 和 **Registration number**。
+要将 Solax 光伏逆变器添加到 Energy Ease App，您需要从 SolaxCloud 获取 **tokenID**、**API Address** 和 **Registration number**。
 
 ---
 

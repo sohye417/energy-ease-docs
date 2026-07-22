@@ -64,6 +64,7 @@ const sidebars: SidebarsConfig = {
             'EnergyEase/solaredge',
             'EnergyEase/solax',
             'EnergyEase/sungrow',
+            'EnergyEase/solis',
           ],
         },
       ],

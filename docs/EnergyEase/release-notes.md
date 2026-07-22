@@ -5,6 +5,30 @@ description: Energy Ease App version update history and feature improvements.
 
 # Release Notes
 
+## V2.4.5
+
+- Improved home energy management experience
+- Added new device configuration capabilities for more usage scenarios
+- Enhanced energy insights and data visualization
+- Improved app performance and stability
+
+---
+
+## V2.4.4
+
+- Fixed known issues and improved system security and stability.
+
+---
+
+## V2.4.3
+
+- Added new device configuration and management capabilities
+- Improved device data presentation and statistics experience
+- Enhanced the convenience of device connection and setup workflows
+- Optimized app performance and stability
+
+---
+
 ## V2.4.0
 
 - Added new smart energy management features

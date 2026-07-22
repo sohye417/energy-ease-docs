@@ -1,11 +1,11 @@
 ---
 title: Solax
-description: Comment connecter votre onduleur solaire Solax à Energy Ease/Indevolt
+description: Comment connecter votre onduleur solaire Solax à Energy Ease
 ---
 
 # Solax
 
-Pour ajouter votre onduleur solaire Solax à l’application Energy Ease/Indevolt, vous aurez besoin de **tokenID**, **API Address** et **Registration Number** depuis SolaxCloud.
+Pour ajouter votre onduleur solaire Solax à l’application Energy Ease, vous aurez besoin de **tokenID**, **API Address** et **Registration Number** depuis SolaxCloud.
 
 ---
 
